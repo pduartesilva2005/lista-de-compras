@@ -138,6 +138,18 @@
     }
   }
 
+  & .checked-item {
+    text-decoration: line-through;
+  }
+
+  & article {
+    display: none;
+  }
+
+  & .show-alert {
+    display: block;
+  }
+
   & .alert-item-removed {
     padding: 0.75rem;
     margin-top: 2.25rem;

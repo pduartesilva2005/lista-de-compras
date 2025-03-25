@@ -47,6 +47,7 @@ ul[role="list"] {
   list-style: none;
 }
 
-.close {
+.close,
+.close-alert {
   cursor: pointer;
 }
