@@ -46,3 +46,7 @@ a {
 ul[role="list"] {
   list-style: none;
 }
+
+.close {
+  cursor: pointer;
+}

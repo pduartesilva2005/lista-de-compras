@@ -6,6 +6,17 @@
   padding: 2.5rem 2rem;
   margin-inline: auto;
 
+  & .desktop-only {
+    display: none;
+  }
+
+  & .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+
   & a {
     display: flex;
     align-items: center;
@@ -52,7 +63,7 @@
     & button {
       all: unset;
       background-color: var(--color-brand);
-      height: 2.5rem;
+      height: 2.75rem;
       padding-inline: 1.125rem;
       border-radius: 0.75rem;
       font: var(--paragraph);
@@ -149,6 +160,29 @@
       & i {
         font-size: 1.25rem;
         line-height: 0;
+      }
+    }
+  }
+}
+
+@media (width >= 80em) {
+  .container {
+    max-width: 64rem;
+
+    & .desktop-only {
+      display: block;
+    }
+
+    & form {
+      flex-direction: row;
+
+      & button {
+        width: 10rem;
+      }
+
+      & input,
+      button {
+        height: 2.75rem;
       }
     }
   }
